@@ -14,7 +14,7 @@ public class DesignPatternApplication {
   public static void main(String[] args) {
     SpringApplication.run(DesignPatternApplication.class, args);
     ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(3);
-    scheduler.scheduleAtFixedRate(new Mythread(), 15 * 1000, 5 * 60000, TimeUnit.MILLISECONDS);
+    scheduler.scheduleAtFixedRate(new Mythread(), 15 * 1000, 1 * 60000, TimeUnit.MILLISECONDS);
   }
 
 }
